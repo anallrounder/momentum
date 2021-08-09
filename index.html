@@ -5,12 +5,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script rel="stylesheet" href="styles.css"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <title>momentum</title>
 </head>
 
 <body>
-  <script src="app.js"></script>
+  <!-- clock & today -->
+  <h3 id="today">0000/00/00</h3>
+  <h3 id="ampm">am</h3>
+  <h2 id="clock"> 00:00:00</h2>
+
+  <!-- sign out -->
+  <button id="signout">sign out</button>
+
+  <!-- weahter start -->
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <!-- weahter end -->
+
+  <!-- login start -->
+  <form id="login-form" class="hidden">
+    <input required type="text" maxlength="15" placeholder="What is your name?" />
+    <input class="hidden" type="submit" value="Sign In" />
+  </form>
+
+  <h1 id="greeting" class="hidden"></h1>
+  <!-- login end -->
+
+
+  <!-- todo start-->
+  <form id="todo-form">
+    <input type="text" placeholder="Write a To Do and Press Enter" required />
+  </form>
+
+  <ul id="todo-list"></ul>
+  <!-- todo end -->
+
+  <!-- quote start -->
+  <br>
+  <div id="quote">
+    <span></span><br>
+    <span></span>
+  </div>
+  <!-- quote end -->
+
+  <!-- <button id="button">Give me color</button>
+  <script src="js/randomcolor.js"></script> -->
+
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/today.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/api.js"></script>
 </body>
 
 </html>
